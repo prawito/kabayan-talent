@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 const ButtonDefault = styled.button`
@@ -9,23 +10,27 @@ const ButtonDefault = styled.button`
     color: white;
     font-weight: bold;
     font-size: 14px;
-    border-radius: ${props => props.rounded ? '25px' : '4px'}
+    border-radius: ${props => (props.rounded ? '25px' : '4px')};
 `;
 
 const ButtonSecondary = styled(ButtonDefault)`
     background: blue;
 `;
 
-const Button = ({secondary, primary, ...props}) => {
-    switch(true){
+const Button = ({ secondary, primary, ...props }) => {
+    switch (true) {
         case primary:
-            return <ButtonDefault {...props} />
+            return <ButtonDefault {...props} />;
         case secondary:
-            return <ButtonSecondary {...props} />
+            return <ButtonSecondary {...props} />;
         default:
-            return <ButtonDefault {...props} />
+            return <ButtonDefault {...props} />;
     }
-
 };
 
-export default Button
+Button.propTypes = {
+    secondary: PropTypes.bool,
+    primary: PropTypes.bool,
+};
+
+export default Button;
