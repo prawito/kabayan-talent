@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+import { SearchBar } from '../../../components/atoms';
 
 const Home = () => {
-    return (
-        <p>Home Page</p>
-    )
-}
+  return (
+    <Fragment>
+      <SearchBar />
+      <p>Home Page</p>
+    </Fragment>
+  );
+};
 
 export default Home;

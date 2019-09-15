@@ -1,5 +1,5 @@
 import Button from './Button';
+import SearchBar from './SearchBar';
+import ButtonCustom from './ButtonCustom';
 
-export {
-    Button
-}
+export { Button, SearchBar, ButtonCustom };
