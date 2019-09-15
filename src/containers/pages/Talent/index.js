@@ -3,6 +3,7 @@ import { Button, ButtonCustom } from '../../../components';
 import InstagramIcon from '@material-ui/icons/Instagram';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import YoutubeIcon from '@material-ui/icons/YouTube';
+import WhatsappIcon from '@material-ui/icons/WhatsApp';
 
 const TalentProfile = () => {
   return <p>Talent Profile</p>;
@@ -55,6 +56,9 @@ const ProfileSection = () => {
         </ButtonCustom>
         <ButtonCustom tip='youtube'>
           <YoutubeIcon />
+        </ButtonCustom>
+        <ButtonCustom tip='whatsapp'>
+          <WhatsappIcon />
         </ButtonCustom>
       </div>
     </div>
